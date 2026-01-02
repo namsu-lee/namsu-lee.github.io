@@ -7,7 +7,7 @@ export default defineConfig({
   site: "https://namsu-lee.github.io/",
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "이남수의 블로그",
       sidebar: [
         {
           label: "Guides",
