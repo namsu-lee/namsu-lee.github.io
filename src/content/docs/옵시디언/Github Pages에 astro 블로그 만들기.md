@@ -66,6 +66,7 @@ title은 필수 속성입니다.
 description은 검색 엔진에서 사용합니다.  
 tableOfContents의 기본값은 minHeadingLevel: 2, maxHeadingLevel:3 인데 저는 제목을 많이 써서 5로 해줬습니다.  
 sidebar는 수동으로 해도 되고 autogenerate를 사용해도 됩니다.  
+sidebar 관련 자세한 건 [링크](https://starlight.astro.build/ko/reference/configuration/#sidebar) 참조  
 ```typescript
 // @ts-check
 import { defineConfig } from "astro/config";
