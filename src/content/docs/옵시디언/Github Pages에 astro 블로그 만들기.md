@@ -13,16 +13,19 @@ sidebar:
 https://docs.github.com/ko/pages/quickstart  
 위 링크의 **웹 사이트 만들기** 부분만 참조  
 만들어지거나 수정 후 적용하는데 최대 10분 걸릴 수 있습니다.
+
 ## astro 프로젝트 만들기
 
 https://docs.astro.build/ko/install-and-setup/  
 저는 starlight 템플릿을 사용해 만들었습니다.
+
 ## astro Github Pages에 배포
 
 https://docs.astro.build/ko/guides/deploy/github/  
 YAML 파일 수정 아무것도 안 했습니다.  
 base 추가 할 필요 없어서 안 했습니다.  
 push 하면 알아서 적용 됩니다.(굿!!)
+
 ## 옵시디언 폴더와 블로그 폴더 심볼릭 링크 설정
 
 윈도우즈 사용법만 적습니다.  
@@ -51,22 +54,28 @@ sidebar:
   order: 1 # 글 제목. 앞에 공백은 탭 대신 띄어쓰기를 사용해야 오류 발생 안 함
 ---
 ```
+
 ## index.mdx
-title은 필수입니다.
+
+title은 필수입니다.  
 필요하면 더 추가
+
 ```markdown
 ---
 title: home
 template: doc #splash로 하면 sidebar 안 보임
 ---
 ```
+
 ## astro.config.mjs
+
 site 속성을 추가하고 값에 URL을 추가합니다.  
 title은 필수 속성입니다.  
 description은 검색 엔진에서 사용합니다.  
 tableOfContents의 기본값은 minHeadingLevel: 2, maxHeadingLevel:3 인데 저는 제목을 많이 써서 5로 해줬습니다.  
 sidebar는 수동으로 해도 되고 autogenerate를 사용해도 됩니다.  
-sidebar 관련 자세한 건 [링크](https://starlight.astro.build/ko/reference/configuration/#sidebar) 참조  
+sidebar 관련 자세한 건 [링크](https://starlight.astro.build/ko/reference/configuration/#sidebar) 참조
+
 ```typescript
 // @ts-check
 import { defineConfig } from "astro/config";
